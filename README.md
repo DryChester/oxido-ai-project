@@ -58,7 +58,6 @@ Po dłuższej chwili, powinien pojawić się następujący komunikat:
 
 
 # Dodatkowe informacje
-[(Back to top)](#table-of-contents)
 
 Skrypt można edytować do swoich potrzeb. 
 
@@ -77,9 +76,7 @@ def main():
 ```
 
 
-# License
-[(Back to top)](#table-of-contents)
-
+# Licencja
 [MIT license](./LICENSE)
 
 
