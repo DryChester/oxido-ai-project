@@ -1,9 +1,13 @@
-import openai
 import os
+from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # ustawienie klucza API OpenAI
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
+client = OpenAI(
+    api_key = os.environ.get("OPENAI_API_KEY")
+)
 #funkcja odczytująca plik z artykułem
 def read_file(filename):
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -17,7 +21,7 @@ def read_file(filename):
 #funkcja generująca odpowiedź z pomocą ChatGPT
 def generate_response(prompt, file_content):
     
-    response = openai.chat.completions.create(
+    response = client.chat.completions.create(
         model="gpt-4",
         max_tokens=5000,
         temperature=0.6,
