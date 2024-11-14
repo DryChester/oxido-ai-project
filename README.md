@@ -2,7 +2,6 @@
 # TXT to HTML generator with AI
 
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)
-[![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
 [![GitHub](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)
 
 Niewielkie narzędzie generujące stronę HTML z wybranego pliku tekstowego. Stworzone w Pythonie. Używa modelu GPT-4. Wygenerowany plik może być wstawiony bezpośrednio do sekcji `<body>`
@@ -45,12 +44,12 @@ Jeżeli nie masz zainstalowanej biblioteki OpenAI (można to sprawdzić wpisują
 openai --version
 ```  
 to zainstalujesz ją w następujący sposób:
-```shell
+```python
 pip install openai
 ```
 ### 4. Uruchom skrypt
 Do uruchomienia skryptu wystarczy wpisanie komendy w Terminalu:
-```shell
+```python
 python main.py
 ```
 Po dłuższej chwili, powinien pojawić się następujący komunikat:
